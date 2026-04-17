@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <div class="cabecalho">
+                <h1 id="nome">PetShop</h1>
+            </div>
+            <div class="sub-cabecalho">
+                <p id="caes">Cães</p>
+                <p id="gatos">Gatos</p>
+                <p id="passaros">Pássaros</p>
+                <p id="coelhos">Coelhos</p>
+                <a href="https://www.instagram.com/aupetmia/" target="_blank">
+                    <img id="img-insta" src="instagram.png" alt="Instagram">
+                </a>
+                <img id="img-telefone" src="telefone.png" alt="Telefone"> 
+                <p>(41) 9999-9999</p>
+            </div>
+        <div class="servicos">
+          <h2>Banho relaxante:</h2>
+          <p>Usamos produtos premium que limpam e hidratam a pele e o pelo, deixando seu pet cheiroso e feliz.</p>
+          <h2>Tosa estilosa e personalizada:</h2>
+          <p>Modelos modernos ou clássicos — do jeito que seu pet fica mais lindo!</p>
+          <h2>Cuidado especial:</h2>
+          <p>Profissionais treinados e apaixonados por animais, garantindo uma experiência livre de estresse.</p>
+          <h2>Leva e Traz:</h2>
+          <p>Oferecemos serviço de transporte para garantir que seu pet receba os cuidados necessários.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="agendar">
+        <h2>Agende Seu horário</h2>
+        <input type="date" id="dataHora">
+        <button onclick="agendar()">Agendar</button>
+         <p id="resultado"></p>
+    </div>
+    
+ <script>
+        function agendar() {
+            let valor = document.getElementById("dataHora").value;
+            document.getElementById("resultado").innerText = 
+                "Agendado para: " + valor;
+        }
+    </script>    
+</body>
+</html>
