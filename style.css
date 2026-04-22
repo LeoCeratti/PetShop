@@ -1,100 +1,147 @@
-body{
-    background-color: #F4EDE6;
+*{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
 }
 
-.container{
+body{
+    background-color: #F4EDE6;
+    font-family: Arial;
+}
+
+
+
+
+.cabecalho{
+    background-color: #034EA1;
+    height: 80px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.Login{
-    background-color: #034EA1;
-    padding: 40px;
-    border-radius: 12px;
-    width: 350px;
-    text-align: center;
-}
-
-#titulo-login{
-    font-size: 80px;
+#nome{
     color: #FFF557;
-    margin-bottom: 30px;
 }
 
-#login, #senha{
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-#btn{
+.sub-cabecalho{
     background-color: #FFF557;
+    padding: 10px 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu p{
+    display: inline;
+    margin-right: 20px;
     color: #034EA1;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 15px;
-    border-radius: 5px;
     font-weight: bold;
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#img-insta, #img-telefone{
+    width: 30px;
+}
+
+
+
+.servicos{
+    margin: 60px auto;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    background-color: #034EA1;
+    border-radius: 20px;
+
+    width: 80%;
+}
+
+.img-pets{
+    width: 250px;
+}
+
+.texto-servicos{
+    color: white;
+    max-width: 500px;
+}
+
+.item-servico{
+    margin-bottom: 20px;
+}
+
+.item-servico h2{
+    color: #FFF557;
+}
+
+.item-servico p{
+    line-height: 1.5;
+}
+
+
+
+
+.agendar{
+    margin: 60px auto;
+    padding: 30px;
+
+    width: 90%;
+    max-width: 500px;
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+.agendar h2{
+    text-align: center;
+    color: #034EA1;
+}
+
+.campo{
+    margin: 12px 0;
+}
+
+.campo label{
+    display: block;
+    margin-bottom: 5px;
+    color: #034EA1;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select{
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 8px;
+    border: 2px solid #034EA1;
+}
+
+
+.agendar button{
+    width: 100%;
+    padding: 12px;
+
+    background-color: #034EA1;
+    color: #FFF557;
+
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-#btn:hover{
-    opacity: 0.9;
-}
-#cabecalho{
-    color: #034EA1;
-}
-#nome{
-    color: #FFF557;
-    font-size: 40px;
-    margin: 0;
-    margin-top: 25px;
-}
-#caes,#gatos,#passaros,#coelhos{
-    background-color: #FFF557;
-    color: #034EA1;
-    border: none;
-    padding: 0 20px;
+
+#resultado{
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
     font-weight: bold;
-}
-.cabecalho{
-    background-color: #034EA1;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    text-align: center  ;
-}
-.sub-cabecalho{
-    background-color: #FFF557;
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    
-    position: fixed;
-    top: 100px;
-    left: 0;
-    z-index: 999;
-}
-#img-insta{
-    display: flex;
-    margin-left: 1000px;
-    width: 50px;
-    height: auto;
-}
-#img-telefone{
-    display: flex;
-    width: 66px;
-    height: auto;
-    
 }

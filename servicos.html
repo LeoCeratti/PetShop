@@ -1,54 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="titulo">
-            <div class="cabecalho">
-                <h1 id="nome">PetShop</h1>
-            </div>
-            <div class="sub-cabecalho">
-                <p id="caes">Cães</p>
-                <p id="gatos">Gatos</p>
-                <p id="passaros">Pássaros</p>
-                <p id="coelhos">Coelhos</p>
-                <a href="https://www.instagram.com/aupetmia/" target="_blank">
-                    <img id="img-insta" src="instagram.png" alt="Instagram">
-                </a>
-                <img id="img-telefone" src="telefone.png" alt="Telefone"> 
-                <p>(41) 9999-9999</p>
-            </div>
-        <div class="servicos">
-          <h2>Banho relaxante:</h2>
-          <p>Usamos produtos premium que limpam e hidratam a pele e o pelo, deixando seu pet cheiroso e feliz.</p>
-          <h2>Tosa estilosa e personalizada:</h2>
-          <p>Modelos modernos ou clássicos — do jeito que seu pet fica mais lindo!</p>
-          <h2>Cuidado especial:</h2>
-          <p>Profissionais treinados e apaixonados por animais, garantindo uma experiência livre de estresse.</p>
-          <h2>Leva e Traz:</h2>
-          <p>Oferecemos serviço de transporte para garantir que seu pet receba os cuidados necessários.</p>
-        </div>
-        </div>
+
+<header>
+    <div class="cabecalho">
+        <h1 id="nome">PetShop</h1>
     </div>
 
-    <div class="agendar">
-        <h2>Agende Seu horário</h2>
-        <input type="date" id="dataHora">
-        <button onclick="agendar()">Agendar</button>
-         <p id="resultado"></p>
+    <div class="sub-cabecalho">
+        <div class="menu">
+            <p>Cães</p>
+            <p>Gatos</p>
+            <p>Coelhos</p>
+        </div>
+
+        <div class="contato">
+            <a href="https://www.instagram.com/aupetmia/" target="_blank">
+                <img src="instagram.png" id="img-insta" alt="Instagram">
+            </a>
+            <img src="telefone.png" id="img-telefone" alt="Telefone">
+            <p>(41) 9999-9999</p>
+        </div>
     </div>
-    
- <script>
-        function agendar() {
-            let valor = document.getElementById("dataHora").value;
-            document.getElementById("resultado").innerText = 
-                "Agendado para: " + valor;
-        }
-    </script>    
+</header>
+
+<!-- SERVIÇOS -->
+<div class="servicos">
+    <img src="pets.png" class="img-pets">
+
+    <div class="texto-servicos">
+
+        <div class="item-servico">
+            <h2>Banho relaxante:</h2>
+            <p>Usamos produtos premium que limpam e hidratam a pele e o pelo, deixando seu pet cheiroso e feliz.</p>
+        </div>
+
+        <div class="item-servico">
+            <h2>Tosa estilosa e personalizada:</h2>
+            <p>Modelos modernos ou clássicos — do jeito que seu pet fica mais lindo!</p>
+        </div>
+
+        <div class="item-servico">
+            <h2>Cuidado especial:</h2>
+            <p>Profissionais treinados e apaixonados por animais, garantindo uma experiência livre de estresse.</p>
+        </div>
+
+        <div class="item-servico">
+            <h2>Leva e Traz:</h2>
+            <p>Oferecemos serviço de transporte para garantir que seu pet receba os cuidados necessários.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- AGENDAR -->
+<div class="agendar">
+    <h2>Agende seu horário</h2>
+
+    <div class="campo">
+        <label>Nome do pet:</label>
+        <input type="text" id="nomePet">
+    </div>
+
+    <div class="campo">
+        <label>Tipo de pet:</label>
+        <select id="pet">
+            <option value="">Selecione</option>
+            <option>Cachorro</option>
+            <option>Gato</option>
+            <option>Coelho</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label>Serviço:</label>
+        <select id="servico">
+            <option value="">Selecione</option>
+            <option>Banho</option>
+            <option>Tosa</option>
+            <option>Banho + Tosa</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label>Data:</label>
+        <input type="date" id="data">
+    </div>
+
+    <div class="campo">
+        <label>Horário:</label>
+        <select id="hora">
+            <option value="">Selecione</option>
+            <option>08:00</option>
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+        </select>
+    </div>
+
+    <button onclick="agendar()">Agendar</button>
+
+    <div id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
