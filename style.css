@@ -8,8 +8,46 @@ body{
     font-family: Arial;
 }
 
+.pagina-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+}
 
+.Login{
+    background-color: #034EA1;
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+#titulo-login{
+    text-align: center;
+    font-size: 45px;
+    color: #FFF557;
+    margin-bottom: 10px;
+}
 
+.Login input{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#btnLogin{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFF557;
+    color: #034EA1;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 .cabecalho{
     background-color: #034EA1;
@@ -31,14 +69,12 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
 .menu p{
     display: inline;
     margin-right: 20px;
     color: #034EA1;
     font-weight: bold;
 }
-
 .contato{
     display: flex;
     align-items: center;
@@ -48,20 +84,14 @@ body{
 #img-insta, #img-telefone{
     width: 30px;
 }
-
-
-
 .servicos{
     margin: 60px auto;
     padding: 40px;
-
     display: flex;
     align-items: center;
     gap: 50px;
-
     background-color: #034EA1;
     border-radius: 20px;
-
     width: 80%;
 }
 
@@ -86,16 +116,11 @@ body{
     line-height: 1.5;
 }
 
-
-
-
 .agendar{
     margin: 60px auto;
     padding: 30px;
-
     width: 90%;
     max-width: 500px;
-
     background-color: white;
     border-radius: 20px;
 }
@@ -116,32 +141,41 @@ body{
     font-weight: bold;
 }
 
-.campo input,
-.campo select{
+.campo input{
     width: 100%;
     padding: 10px;
-
+    border-radius: 8px;
+    border: 2px solid #034EA1;
+}
+.campo select{
+    width: 523px;
+    padding: 10px;
     border-radius: 8px;
     border: 2px solid #034EA1;
 }
 
-
 .agendar button{
-    width: 100%;
+    width: 523px;
     padding: 12px;
-
     background-color: #034EA1;
     color: #FFF557;
-
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
-
 
 #resultado{
     margin-top: 15px;
     padding: 15px;
     border-radius: 10px;
     font-weight: bold;
+}
+
+.sucesso{
+    background-color: #ccffcc;
+    color: #060;
+}
+.erro{
+    background-color: #ffcccc;
+    color: #900;
 }
