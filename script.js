@@ -6,7 +6,7 @@ function login(){
     if(login === "" || senha === ""){
         resultado.innerHTML = "Preencha todos os campos!";
         resultado.className = "erro";
-        return; // <-- IMPORTANTE
+        return; 
     }
 
     resultado.innerHTML = "Login realizado com sucesso!";
@@ -17,7 +17,7 @@ function login(){
     }, 1000);
 }
 
-// EVENTO FORA DA FUNÇÃO (correto)
+
 const botaoLogin = document.getElementById("btnLogin");
 if(botaoLogin){
     botaoLogin.addEventListener("click", login);

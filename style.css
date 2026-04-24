@@ -179,3 +179,30 @@ body{
     background-color: #ffcccc;
     color: #900;
 }
+
+
+#rodape {
+  background-color: #034EA1;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#endereco {
+  font-size: 20px;
+  color: #FFF557;
+  margin: 0;
+}
+
+#img-maps {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
